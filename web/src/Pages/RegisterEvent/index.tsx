@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import {} from 'react-router-dom'
-
-import './style.css';
+import {} from 'react-router-dom';
 
 
 function RegisterEvent() {
     return (
-        <div className="page-login">
+        <div className="page-primary">
             <h1>Cadastro de Evento</h1>
             <div className="conteiner">
                 <form action="">
