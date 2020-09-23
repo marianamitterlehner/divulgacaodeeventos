@@ -7,6 +7,8 @@ export async function up(knex: Knex){
         table.string('local').notNullable();
         table.string('foto').notNullable();
         table.string('comentario').notNullable();
+        table.integer('like').notNullable();
+        table.integer('deslike').notNullable();
 
         table.integer('id_user')
         .notNullable()

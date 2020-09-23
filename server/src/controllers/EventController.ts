@@ -3,7 +3,18 @@ import db from '../database/connection';
 
 export default class EventController {
     async index(request:Request, response:Response){
-        const event = await db('events').select('*');
+        interface EventsProps {
+           page:Number 
+        }
+        
+       /* const EventsProps: React.FC<EventsProps> = () => {
+            {page = 1} = request.query;
+            const event = await db('events')
+            .limit(4)
+            .offset((page- 1) * 5)
+            .select('*');
+        }*/
+         
     
         return response.json(event);
     }
@@ -39,4 +50,5 @@ export default class EventController {
         await db('events').where('id_event', id).delete();
         return response.status(204).send();
     }
+
 }
