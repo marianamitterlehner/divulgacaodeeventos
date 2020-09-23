@@ -41,7 +41,7 @@ input, textarea{
     color: var(--palette-text-input);
 }
 
-p{
+p, strong{
     font-size: 16px;
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
